@@ -32,7 +32,8 @@
 }
 
 .photo {
-  height: 100%;
+  width: 70%;
+  height: 70%;
   border-radius: 50%;
 }
 
@@ -51,4 +52,11 @@
   .right {
     width: 100%;
   }
+}
+.cards {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(11.25rem, 100%), 1fr));
 }

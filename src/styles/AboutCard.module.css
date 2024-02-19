@@ -1,0 +1,23 @@
+.body {
+  color: white;
+  border: 1px white solid;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  background: linear-gradient(300deg, #30cfd0, #330867);
+  padding: 0.5rem;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.des {
+  padding: 0.5rem;
+}
