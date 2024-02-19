@@ -5,16 +5,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .background {
   z-index: -1;
 }
 
-.text {
-  color: white;
-}
 .mainTitle {
   font-size: clamp(5rem, 15vw, 50rem);
   background: linear-gradient(300deg, #30cfd0, #330867);
@@ -41,4 +43,8 @@
   font-size: clamp(2rem, 8vw, 30rem);
   line-height: 1;
   color: aliceblue;
+}
+
+.credit {
+  color: gray;
 }
