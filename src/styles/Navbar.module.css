@@ -1,0 +1,36 @@
+.body {
+  width: 100%;
+  backdrop-filter: blur(1px);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  gap: 1rem;
+}
+
+.contact {
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  color: aliceblue;
+  border: none;
+}
