@@ -21,6 +21,9 @@ const Navbar = () => {
         <Image src={logo} alt="logo" width={60} />
       </Link>
       <ul className={styles.links}>
+        <Link href="#home" className={styles.link} onClick={handleScroll}>
+          Home
+        </Link>
         <Link href="#about" className={styles.link} onClick={handleScroll}>
           About
         </Link>
