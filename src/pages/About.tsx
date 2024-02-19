@@ -26,7 +26,12 @@ const About = () => {
   return (
     <div id="about" className={styles.body}>
       <div className={styles.left}>
-        <h1 className={styles.title}>Music Producer</h1>
+        <>
+          <h1 className={styles.title}>
+            Music <h1 className={styles.subTitle}>Producer</h1>
+          </h1>
+        </>
+
         <p className={styles.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           voluptas, unde, sapiente accusantium molestiae placeat dicta corrupti
