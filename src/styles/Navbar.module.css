@@ -1,8 +1,8 @@
 .body {
   width: 100%;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(3px);
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
   padding: 1rem;
   color: white;
