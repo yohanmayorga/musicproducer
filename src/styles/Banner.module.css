@@ -13,6 +13,12 @@
   );
 }
 
+@media (max-width: 768px) {
+  .body {
+    padding-top: 8rem;
+  }
+}
+
 .background {
   z-index: -1;
 }
