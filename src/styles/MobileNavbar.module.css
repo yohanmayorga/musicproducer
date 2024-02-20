@@ -34,13 +34,16 @@
   cursor: pointer;
 }
 
-.links {
+.linksBox {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
   height: 92vh;
   width: 50%;
   right: 0;
+}
+
+.links {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

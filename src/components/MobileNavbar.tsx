@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/MobileNavbar.module.css";
 import logo from "@/../../public/assets/logo.svg";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { IoMdPlayCircle } from "react-icons/io";
 import { GiMusicalScore } from "react-icons/gi";
 
@@ -16,45 +16,77 @@ const MobileNavbar = () => {
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({ behavior: "smooth" });
   };
+  const useOutsideClick = (callback: () => void) => {
+    const ref = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+      const handleClickOutside = (event: MouseEvent) => {
+        if (ref.current && !ref.current.contains(event.target as Node)) {
+          callback();
+        }
+      };
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [callback]);
+    return ref;
+  };
+  const ref = useOutsideClick(() => {
+    setShowMenu(false);
+  });
+
+  const handleClick = () => {
+    if (showMenu === true) {
+      setShowMenu(false);
+      console.log(showMenu);
+    } else {
+      setShowMenu(true);
+      console.log(showMenu);
+    }
+  };
+
   return (
     <div className={styles.body}>
       <div className={styles.header}>
         <Link href={"#home"} onClick={handleScroll}>
           <Image src={logo} alt="logo" width={60} />
         </Link>
-        <GiMusicalScore
-          className={styles.button}
-          onClick={() => (showMenu ? setShowMenu(false) : setShowMenu(true))}
-        />
+        <GiMusicalScore className={styles.button} onClick={handleClick} />
       </div>
       {showMenu && (
-        <ul className={styles.links}>
-          <Link href="#home" className={styles.link} onClick={handleScroll}>
-            Home
-          </Link>
-          <Link href="#about" className={styles.link} onClick={handleScroll}>
-            About
-          </Link>
-          <Link
-            href="#experience"
-            className={styles.link}
-            onClick={handleScroll}
-          >
-            Experience
-          </Link>
-          <Link href="#work" className={styles.link} onClick={handleScroll}>
-            Work
-          </Link>
-          <Link href="#pricing" className={styles.link} onClick={handleScroll}>
-            Pricing
-          </Link>
-          <Link href="#contact" className={styles.link}>
-            <button className={styles.contact}>
-              <IoMdPlayCircle />
-              Contact
-            </button>
-          </Link>
-        </ul>
+        <div ref={ref} className={styles.linksBox}>
+          <ul className={styles.links}>
+            <Link href="#home" className={styles.link} onClick={handleScroll}>
+              Home
+            </Link>
+            <Link href="#about" className={styles.link} onClick={handleScroll}>
+              About
+            </Link>
+            <Link
+              href="#experience"
+              className={styles.link}
+              onClick={handleScroll}
+            >
+              Experience
+            </Link>
+            <Link href="#work" className={styles.link} onClick={handleScroll}>
+              Work
+            </Link>
+            <Link
+              href="#pricing"
+              className={styles.link}
+              onClick={handleScroll}
+            >
+              Pricing
+            </Link>
+            <Link href="#contact" className={styles.link}>
+              <button className={styles.contact}>
+                <IoMdPlayCircle />
+                Contact
+              </button>
+            </Link>
+          </ul>
+        </div>
       )}
     </div>
   );
