@@ -11,6 +11,7 @@
     rgba(0, 0, 0, 0.3) 50%,
     rgba(0, 0, 0, 1) 90%
   );
+  position: relative;
 }
 
 .background {

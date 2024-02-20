@@ -16,6 +16,7 @@ const MobileNavbar = () => {
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({ behavior: "smooth" });
   };
+
   const useOutsideClick = (callback: () => void) => {
     const ref = useRef<HTMLDivElement>(null);
     useEffect(() => {
@@ -35,23 +36,16 @@ const MobileNavbar = () => {
     setShowMenu(false);
   });
 
-  const handleClick = () => {
-    if (showMenu === true) {
-      setShowMenu(false);
-      console.log(showMenu);
-    } else {
-      setShowMenu(true);
-      console.log(showMenu);
-    }
-  };
-
   return (
     <div className={styles.body}>
       <div className={styles.header}>
         <Link href={"#home"} onClick={handleScroll}>
           <Image src={logo} alt="logo" width={60} />
         </Link>
-        <GiMusicalScore className={styles.button} onClick={handleClick} />
+        <GiMusicalScore
+          className={styles.button}
+          onClick={() => setShowMenu(!showMenu)}
+        />
       </div>
       {showMenu && (
         <div ref={ref} className={styles.linksBox}>

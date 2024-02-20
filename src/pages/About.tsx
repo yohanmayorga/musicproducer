@@ -27,9 +27,8 @@ const About = () => {
     <div id="about" className={styles.body}>
       <div className={styles.left}>
         <>
-          <h1 className={styles.title}>
-            About me <h1 className={styles.subTitle}>Producer</h1>
-          </h1>
+          <h1 className={styles.title}>About me </h1>
+          <h1 className={styles.subTitle}>Producer</h1>
         </>
 
         <p className={styles.text}>

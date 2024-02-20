@@ -27,7 +27,7 @@ const Experience = () => {
   return (
     <div id="experience" className={styles.body}>
       <div className={styles.mainBox}>
-        <h1 className={styles.title}>Experience</h1>
+        <h1 className={styles.title}>Title</h1>
         <h3 className={styles.subtitle}>Subtitle</h3>
         <p className={styles.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odit
