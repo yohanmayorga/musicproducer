@@ -1,0 +1,59 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 25%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.image:hover {
+  scale: 1.1;
+}
+
+.title {
+  color: #30cfd0;
+}
+
+.subtitle {
+  color: white;
+}
+
+.text {
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .body {
+    width: 90%;
+  }
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  background: linear-gradient(300deg, #30cfd0, #330867);
+  color: aliceblue;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}
+
+.link {
+  text-decoration: none;
+}

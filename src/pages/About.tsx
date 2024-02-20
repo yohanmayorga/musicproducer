@@ -28,7 +28,7 @@ const About = () => {
       <div className={styles.left}>
         <>
           <h1 className={styles.title}>
-            Music <h1 className={styles.subTitle}>Producer</h1>
+            About me <h1 className={styles.subTitle}>Producer</h1>
           </h1>
         </>
 
