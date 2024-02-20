@@ -44,7 +44,7 @@
   padding: 0.5rem;
   border-radius: 15px;
   cursor: pointer;
-  background: #3a4149;
+  background: linear-gradient(300deg, #30cfd0, #330867);
   color: aliceblue;
   border: none;
   display: flex;
@@ -55,5 +55,6 @@
 }
 
 .contact:hover {
-  background: linear-gradient(300deg, #30cfd0, #330867);
+  background: white;
+  color: black;
 }
