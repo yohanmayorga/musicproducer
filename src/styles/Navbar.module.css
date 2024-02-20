@@ -4,12 +4,13 @@
   z-index: 1;
   position: fixed;
   top: 0;
-  padding: 1rem;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (max-width: 768px) {
