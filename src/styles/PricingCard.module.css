@@ -1,0 +1,53 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.body:hover {
+  scale: 1.1;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #330867;
+}
+
+.services {
+  margin-top: 0.5rem;
+}
+.servicesItem {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: rgb(162, 162, 162);
+}
+
+.icon {
+  background: linear-gradient(300deg, #30cfd0, #330867);
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.button {
+  background: #330867;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+}

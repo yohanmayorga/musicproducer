@@ -11,6 +11,7 @@
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  position: relative;
 }
 
 .background {
@@ -18,8 +19,9 @@
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
   z-index: -1;
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
+  position: absolute;
 }
 
 @keyframes gradient-animation {
@@ -32,4 +34,37 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.title {
+  font-size: clamp(3rem, 3vw, 25rem);
+  color: white;
+}
+
+.text {
+  width: 60%;
+  text-align: center;
+  color: gray;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

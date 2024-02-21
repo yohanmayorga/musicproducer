@@ -6,6 +6,7 @@ import Banner from "@/pages/Banner";
 import Experience from "@/pages/Experience";
 import Work from "@/pages/Work";
 import Pricing from "@/pages/Pricing";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Experience />
       <Work />
       <Pricing />
+      <Footer />
     </>
   );
 }
