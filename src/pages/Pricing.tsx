@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/Pricing.module.css";
 import PricingCard from "@/components/PricingCard";
+import Contact from "./Contact";
 
 const Pricing = () => {
   const cards = [
@@ -73,6 +74,7 @@ const Pricing = () => {
           );
         })}
       </div>
+      <Contact />
     </div>
   );
 };

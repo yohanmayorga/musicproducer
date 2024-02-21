@@ -1,0 +1,53 @@
+.body {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+}
+
+.input {
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  border-radius: 15px;
+}
+
+.contact {
+  margin: auto;
+  width: max-content;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  background: linear-gradient(300deg, #30cfd0, #330867);
+  color: aliceblue;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.contact:hover {
+  background: white;
+  color: black;
+}
+
+.text {
+  font-size: 14px;
+  text-align: justify;
+  color: rgb(195, 195, 195);
+}
+
+@media (max-width: 768px) {
+  .body {
+    width: auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}

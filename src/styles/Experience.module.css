@@ -24,9 +24,10 @@
   padding-right: 3rem;
 }
 
-.laptop {
-  height: 50vh;
+.phone {
+  height: 70vh;
   width: auto;
+  transform: rotateZ(5deg);
 }
 
 .right {

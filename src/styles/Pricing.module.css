@@ -17,7 +17,7 @@
 .background {
   background: linear-gradient(300deg, #30cfd0, #330867, #000000);
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  animation: gradient-animation 5s ease infinite;
   z-index: -1;
   min-height: 100%;
   width: 100%;
@@ -67,4 +67,10 @@
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .body {
+    padding-top: 5rem;
+  }
 }

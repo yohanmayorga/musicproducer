@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/styles/Experience.module.css";
-import laptop from "@/../../public/assets/laptop.png";
+import phone from "@/../../public/assets/phone.png";
 
 import ExperienceCard from "@/components/ExperienceCard";
 import Image from "next/image";
@@ -35,18 +35,12 @@ const Experience = () => {
     <div id="experience" className={styles.body}>
       <div className={styles.mainBody}>
         <div className={styles.left}>
-          <Image
-            src={laptop}
-            alt="laptop"
-            width={480}
-            height={360}
-            className={styles.laptop}
-          />
+          <Image src={phone} alt="phone" priority className={styles.phone} />
         </div>
 
         <div className={styles.right}>
           <div className={styles.mainBox}>
-            <h1 className={styles.title}>Title</h1>
+            <h1 className={styles.title}>Experience</h1>
             <h3 className={styles.subtitle}>Subtitle</h3>
             <p className={styles.text}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
