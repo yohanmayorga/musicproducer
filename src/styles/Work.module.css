@@ -2,18 +2,24 @@
   min-height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(6, 7, 10, 0.7) 30%,
-    rgba(2, 3, 4, 0.7) 70%,
+    rgba(6, 7, 10, 0.8) 30%,
+    rgba(2, 3, 4, 0.8) 70%,
     rgba(0, 0, 0, 1) 100%
   );
   position: relative;
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .background {
@@ -24,6 +30,8 @@
 
 .left {
   width: 50%;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .subtitle {
@@ -50,13 +58,85 @@
   color: white;
 }
 
+.cards {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
 .right {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.phone {
+  height: 70vh;
+  width: auto;
+  transform: rotateZ(-5deg);
+}
+
+.titlePhone {
+  font-size: clamp(3rem, 3vw, 25rem);
+  background: linear-gradient(300deg, #30cfd0, #330867);
+  background-size: 130% 130%;
+  background-clip: text;
+  color: transparent;
+
+  margin-top: -7rem;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  z-index: 1;
+}
+
+.socialIcon {
+  background: linear-gradient(300deg, #30cfd0, #330867);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.customers {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {
   .body {
     padding-top: 5rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .customers {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 973px) {
+  .mainBody {
     flex-direction: column;
   }
   .left,
