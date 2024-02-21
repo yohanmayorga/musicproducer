@@ -15,12 +15,8 @@
 }
 
 .mainBox {
-  border: #30cfd0 2px solid;
-  border-right: none;
-  border-top: none;
-  border-bottom-left-radius: 25px;
-  padding: 1rem;
-  width: 90%;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .title {

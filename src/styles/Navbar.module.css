@@ -11,6 +11,7 @@
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  border-bottom: 1px #185353 solid;
 }
 
 @media (max-width: 768px) {
