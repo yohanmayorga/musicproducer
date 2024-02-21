@@ -1,0 +1,35 @@
+.body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.background {
+  background: linear-gradient(300deg, #30cfd0, #330867, #000000);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  z-index: -1;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
