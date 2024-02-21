@@ -82,6 +82,12 @@ const Work = () => {
               );
             })}
           </div>
+          <div className={styles.social}>
+            <IoLogoInstagram className={styles.socialIcon} />
+            <FaXTwitter className={styles.socialIcon} />
+            <PiTiktokLogo className={styles.socialIcon} />
+            <FaLinkedinIn className={styles.socialIcon} />
+          </div>
         </div>
         <div className={styles.right}>
           <Image
@@ -91,12 +97,6 @@ const Work = () => {
             className={styles.phone}
           />
           <h1 className={styles.titlePhone}>Follow my work</h1>
-          <div className={styles.social}>
-            <IoLogoInstagram className={styles.socialIcon} />
-            <FaXTwitter className={styles.socialIcon} />
-            <PiTiktokLogo className={styles.socialIcon} />
-            <FaLinkedinIn className={styles.socialIcon} />
-          </div>
         </div>
       </div>
       <div className={styles.customers}>

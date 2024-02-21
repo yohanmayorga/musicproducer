@@ -3,6 +3,13 @@
   flex-direction: column;
   background: linear-gradient(300deg, #30cfd0, #330867);
   border-radius: 16px;
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .body {
+    width: 100%;
+  }
 }
 
 .des {
