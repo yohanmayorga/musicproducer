@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Music Producer
 
-## Getting Started
+web page dedicated to showing the work of a music producer, his profile, his experience, and his means of contact. The format can be applied to any profession. The purpose of this project is to demonstrate knowledge in the use of TypeScript, JavaScript, HTML and CSS for front end development.
 
-First, run the development server:
+![musicproducer](public/assets/Capture1.png)
+
+## Used tools
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+HTML, CSS, JavaScript, TypeScript, NextJS, React.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How does it work?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The page contains different sections to display information. At the top you will have the menu with each of the sections, and the user will be able to scroll through the entire document using the links.
+![musicproducer](public/assets/Capture2.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project is a front end only project, however, back end functionality can be incorporated depending on the user's requirements.
+![pokedex](public/assets/Capture3.png)
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This open source project is completely free to use, download and customize.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The website is available at this [link.](https://musicproducer.vercel.app/)
