@@ -38,6 +38,7 @@
   background: linear-gradient(300deg, #30cfd0, #330867);
   background-clip: text;
   color: transparent;
+  transition: all 0.2s ease-in-out;
 }
 
 .contact {
