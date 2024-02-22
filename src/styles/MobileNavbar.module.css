@@ -40,7 +40,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  width: 50%;
+  width: max-content;
   right: 0;
   z-index: 3;
   padding-top: 2rem;
@@ -51,7 +51,8 @@
   flex-direction: column;
   gap: 0.5rem;
   padding-top: 1rem;
-  padding-left: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   animation: appear 0.5s ease-in-out forwards;
 }
 
@@ -96,4 +97,23 @@
 
 .contact:hover {
   background: black;
+}
+
+.closeContainer {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+
+.close {
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+  text-align: end;
+  align-self: flex-end;
+  background: black;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }

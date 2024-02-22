@@ -6,6 +6,7 @@ import logo from "@/../../public/assets/logo.svg";
 import React, { useEffect, useRef, useState } from "react";
 import { IoMdPlayCircle } from "react-icons/io";
 import { GiMusicalScore } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 
 const MobileNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -49,6 +50,12 @@ const MobileNavbar = () => {
       </div>
       {showMenu && (
         <div ref={ref} className={styles.linksBox}>
+          <div className={styles.closeContainer}>
+            <MdClose
+              className={styles.close}
+              onClick={() => setShowMenu(false)}
+            />
+          </div>
           <ul className={styles.links}>
             <Link href="#home" className={styles.link} onClick={handleScroll}>
               Home
