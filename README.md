@@ -1,6 +1,6 @@
 # Music Producer
 
-web page dedicated to showing the work of a music producer, his profile, his experience, and his means of contact. The format can be applied to any profession. The purpose of this project is to demonstrate knowledge in the use of TypeScript, JavaScript, HTML and CSS for front end development.
+Web page dedicated to showing the work of a music producer, his profile, his experience, and his contact methods. The format can be applied to any profession. The purpose of this project is to demonstrate knowledge in the use of TypeScript, JavaScript, HTML and CSS for front end development.
 
 ![musicproducer](public/assets/Capture1.png)
 
