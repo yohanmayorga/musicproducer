@@ -16,7 +16,7 @@ The page contains different sections to display information. At the top you will
 ![musicproducer](public/assets/Capture2.png)
 
 This project is a front end only project, however, back end functionality can be incorporated depending on the user's requirements.
-![pokedex](public/assets/Capture3.png)
+![musicproducer](public/assets/Capture3.png)
 
 ## Learn More
 
