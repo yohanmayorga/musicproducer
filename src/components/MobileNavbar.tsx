@@ -80,7 +80,11 @@ const MobileNavbar = () => {
             >
               Pricing
             </Link>
-            <Link href="#contact" className={styles.link}>
+            <Link
+              href="#contact"
+              className={styles.link}
+              onClick={handleScroll}
+            >
               <button className={styles.contact}>
                 <IoMdPlayCircle />
                 Contact

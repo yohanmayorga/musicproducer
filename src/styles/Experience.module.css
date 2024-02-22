@@ -21,15 +21,12 @@
 }
 
 .left {
-  padding-left: 3rem;
-  padding-right: 3rem;
   width: max-content;
 }
 
 .phone {
   height: 70vh;
   width: auto;
-  transform: rotateZ(5deg);
 }
 
 .right {

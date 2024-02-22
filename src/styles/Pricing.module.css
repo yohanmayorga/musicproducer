@@ -42,8 +42,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
 .title {
@@ -72,5 +70,9 @@
 @media (max-width: 768px) {
   .body {
     padding-top: 5rem;
+  }
+
+  .text {
+    width: 90%;
   }
 }

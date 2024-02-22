@@ -11,7 +11,7 @@ import Contact from "@/pages/Contact";
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.pages}>
       <Banner />
       <About />
       <Experience />
@@ -19,6 +19,6 @@ export default function Home() {
       <Pricing />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }

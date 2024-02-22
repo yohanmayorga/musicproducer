@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Banner.module.css";
-import background from "@/../../public/assets/background.jpg";
+import background from "@/../../public/assets/background3.jpg";
 
 const Banner = () => {
   return (

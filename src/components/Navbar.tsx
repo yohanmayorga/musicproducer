@@ -37,7 +37,7 @@ const Navbar = () => {
           Pricing
         </Link>
       </ul>
-      <Link href="#contact" className={styles.link}>
+      <Link href="#contact" className={styles.link} onClick={handleScroll}>
         <button className={styles.contact}>
           <IoMdPlayCircle />
           Contact
